@@ -32,4 +32,8 @@ setTimeout(function () {
     };
 
     document.onkeypress = handleInput;
+
+    if (window!=window.top) {
+        document.getElementById('controls').style.display = 'none';
+    }
 }, 0);
